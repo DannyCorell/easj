@@ -1,0 +1,140 @@
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+
+Header{
+
+  color: #b04553;
+
+}
+
+li {
+display: none;
+}
+
+p{
+  color: #2c3837;
+}
+
+article{
+
+  color: #b04553;
+  padding: 0 1rem;
+  margin: 1rem 0;
+
+}
+figure {
+  font-style: italic;
+  margin: 0 0 1rem;
+  background: #b04553;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+
+}
+/* display none - er sat til da vi ikke ønsker
+at have aside vist i mobil udgaven*/
+
+aside{
+  display: none;
+  color: #b04553;
+
+}
+/* margin top skaber afstanden mellem borders
+så de ikke ligger oven i hinanden */
+footer {
+  color: #b04553;
+  padding-left: 0 1rem;
+  margin: 1rem 0;
+  border-top: 1px dashed black;
+
+}
+/*float får texten til at flyde op ved siden af
+billedet - for at undgå dette er min float centerert
+det gør ingen synlig forskel på mobilen, men det gør det på en stor skærm*/
+
+body{
+  height: 100%;
+  margin: 0px auto;
+  background-color: #e9e9e9;
+  margin-left: 2%;
+}
+  @media screen and (min-width: 700px){
+
+
+    /* indsæt logo */
+.logo{
+    display: inline;
+}
+
+  li {
+    display: inline;
+    background-color:#b04553;
+    width: 100% auto;
+    position: relative;
+
+}
+    body{
+      background: #e9e9e9;
+    }
+    figure
+    {
+      float: right;
+      max-width: 50%;
+      margin: 0 0 1rem 2rem;
+
+    }
+        /* fjerner burgermenuen, ved størreskræm */
+.burger{
+  display: none;
+}
+
+  aside{
+
+    display: block;
+    padding: 0 1rem;
+
+  }
+  article{
+    overfloat: auto; /*sikre billedet bliver hvor de skal*/
+
+
+  }
+  @media screen and (min-width: 960px){
+    #wrapper{
+      width: 1200px;
+      margin: 0 auto;
+
+}
+.logo{
+  display: inline;
+}
+body{
+  background-color: #e9e9e9;
+}
+
+article{
+  width: 70%;
+  float: left;
+  margin-right: 1rem;
+  border-right: 1px solid #b04553;
+  border-top: none;
+  border-bottom: none;
+
+
+
+}
+    aside{
+      padding: 1.3rem 1rem 1rem 1rem
+    }
+
+footer{
+  clear: both;
+}
