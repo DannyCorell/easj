@@ -1,12 +1,230 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>git</title>
-    <link rel="stylesheet" href="style.css"
-  </head>
-  <body>
-    <h1> git test </h1>
 
-  </body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Billetsalg</title>
+    <link rel="icon" href="/billetsalg/img/logo.png">
+    <link rel="stylesheet" href="/billetsalg/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="main-nav">
+        <div class="nav-wrapper">
+          <ul>
+            <a class="logo" href="index.html">Billetsalg</a>
+            <li><a href="login.html">Log ind</a></li>
+            <li><a href="">DA</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="main-nav1">
+        <div class="nav-wrapper1">
+          <ul>
+            <a class="logo" href="index.html"></a>
+            <li><a href="event.html">Alle events</a></li>
+            <li><a href="">Alle byer</a></li>
+
+            <li><a href="kurv.html">Indkøbskurv</a></li>
+            <li><a href="info.html">Info</a></li>
+            <form><input type="text" name="search" placeholder="Søg.."></form>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <img class="mySlides" src="https://cdn.singersroom.com/wp-content/uploads/2017/01/august-alsina-drugs-music-video-2.jpg">
+        <img class="mySlides" src="http://www.gbajumo.com/wp-content/uploads/2017/08/Maleek-Berry-EP.png"
+        >
+        <img class="mySlides" src="https://www.billetsalg.dk/images/logo.png"
+        >
+      </section>
+
+      <section class="billeder">
+        <h2> POPULÆRE EVENTS</h2>
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> VIS ALLE</button>
+    <button class="btn" onclick="filterSelection('nature')"> MUSIK</button>
+    <button class="btn" onclick="filterSelection('cars')"> SPORT</button>
+    <button class="btn" onclick="filterSelection('people')"> MUSEUM</button>
+    <button class="btn" onclick="filterSelection('other')"> ANDET</button>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+  <div class="column nature">
+  <div class="content">
+    <img src="https://cdn.singersroom.com/wp-content/uploads/2017/01/august-alsina-drugs-music-video-2.jpg" alt="Mountains" style="width:100%">
+    <h4>VEGA - Musikkens Hus, Lille VEGA, København V <br> tir, 13/02/2018 20:00</h4>
+    <p>Billetpriser: 230 kr. + gebyr</p>
+  </div>
+  </div>
+  <div class="column nature">
+  <div class="content">
+  <img src="http://www.gbajumo.com/wp-content/uploads/2017/08/Maleek-Berry-EP.png" alt="Lights" style="width:100%">
+    <h4>Rust, Guldbergsgade 8, 2200 København N <br> 17 feb 2018 kl. 22:00 <br>175 + gebyr i forsalg / 200,- i døren</h4>
+    <p> </p>
+  </div>
+  </div>
+  <div class="column nature">
+  <div class="content">
+  <img src="http://www.eminem.com/sites/g/files/g20001906/f/201710/EMFREE.jpg" alt="Nature" style="width:100%">
+    <h4>roskilde 2018 <br>onsdag den 4. juli 2018 19.00</h4>
+    <p></p>
+  </div>
+  </div>
+
+  <div class="column cars">
+  <div class="content">
+    <img src="http://www.achorsens.dk/sites/default/files/styles/header_large/public/nyheder/spg_2017_webbanner_mindre.jpg?itok=YiFjYC_g" alt="Car" style="width:100%">
+    <h4>Speedway 2018 <br>Billetpriser: 350 kr. + gebyr</h4>
+
+  </div>
+  </div>
+  <div class="column cars">
+  <div class="content">
+  <img src="https://static1.squarespace.com/static/5193ef6ee4b07f61fcf134da/t/543d7196e4b0c927dad4cae5/1413312921420/Are_Sweden_5jpg?format=1500w" alt="Car" style="width:100%">
+    <h4>Billetpriser: 350 kr. + gebyr</h4>
+
+  </div>
+  </div>
+  <div class="column cars">
+  <div class="content">
+  <img src="http://www.lahtiskigames.com/sites/default/files/lahtiskifestival_logo_purple.png" alt="Car" style="width:100%">
+    <h4>Billetpriser: 250 kr. + gebyr</h4>
+
+  </div>
+  </div>
+
+  <div class="column people">
+  <div class="content">
+    <img src="http://www.bornholmsmuseum.dk/CropUp/420x310Z/media/302296/museet2013.jpg" alt="Car" style="width:100%">
+    <h4>Billetpriser: 150 kr. + gebyr</h4>
+
+  </div>
+  </div>
+  <div class="column people">
+  <div class="content">
+  <img src="https://files.guidedanmark.org/files/483/483_309565.jpg?qfix" alt="Car" style="width:100%">
+    <h4>Billetpriser: 300 kr. + gebyr</h4>
+
+  </div>
+  </div>
+  <div class="column people">
+  <div class="content">
+  <img src="https://southcoastsun.co.za/wp-content/uploads/sites/39/2016/02/Ripleys.jpg" alt="Car" style="width:100%">
+    <h4>Billetpriser: 100 kr. + gebyr</h4>
+
+  </div>
+  </div>
+  <div class="column other">
+  <div class="content">
+    <img src="https://www.billetsalg.dk/EventImages/fb19a709-3237-4660-bdac-c801729750e8.PNG" alt="Mountains" style="width:100%">
+    <h4>Billetpriser: 2000 kr. + gebyr</h4>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+
+  <!-- END MAIN -->
+  </div>
+
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+</section>
+
+<footer>
+
+
+<p> Billetsalg.dk
+</p>
+
+
+
+  <li>
+    <a href="https://www.facebook.com/billetsalg" target="_blank"></a>
+    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+  </li>
+
+  <li>
+    <a href="https://www.linkedin.com/company/billetsalg-dk-aps" target="_blank"></a>
+    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+  </li>
+  <p>
+    <form>
+  <label for="fname"></label>
+  <input type="text" id="fname" name="fname">
+</form> <p>Nyhedsbrev</p>
+  </p>
+</footer>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+</main>
+</body>
 </html>

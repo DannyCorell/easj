@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Billetsalg</title>
+    <link rel="icon" href="/billetsalg/img/logo.png">
+    <link rel="stylesheet" href="/billetsalg/css/kurv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="main-nav">
+        <div class="nav-wrapper">
+          <ul>
+            <a class="logo" href="index.html">Billetsalg</a>
+            <li><a href="">SIKKER BESTILLING</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+
+    </header>
+    <main>
+
+
+
+
+          <div class="basket">
+            <div class="basket-module">
+              <label for="promo-code">Insæt promotional Kode</label>
+              <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+              <button class="promo-code-cta">Tilføj</button>
+            </div>
+            <div class="basket-labels">
+              <ul>
+                <li class="item item-heading">Item</li>
+                <li class="price">Pris</li>
+                <li class="quantity">Antal</li>
+                <li class="subtotal">Total</li>
+              </ul>
+            </div>
+            <div class="basket-product">
+              <div class="item">
+                <div class="product-image">
+                  <img src="/billetsalg/img/aug.jpeg" alt="Placholder Image 2" class="product-frame">
+                </div>
+                <div class="product-details">
+                  <h1><strong><span class="item-quantity">4</span> x August</strong> Alsina</h1>
+                  <p><strong>August Alsina</strong></p>
+                  <p>Product Code - 232321939</p>
+                </div>
+              </div>
+              <div class="price">250.00</div>
+              <div class="quantity">
+                <input type="number" value="4" min="1" class="quantity-field">
+              </div>
+              <div class="subtotal">1000.00</div>
+              <div class="remove">
+                <button>Fjern</button>
+              </div>
+            </div>
+            <div class="basket-product">
+              <div class="item">
+                <div class="product-image">
+                  <img src="/billetsalg/img/maleek.jpeg" alt="Placholder Image 2" class="product-frame">
+                </div>
+                <div class="product-details">
+                  <h1><strong><span class="item-quantity">1</span> x Maleek</strong> Berry</h1>
+                  <p><strong>Maleek Berry</strong></p>
+                  <p>Product Code - 232321939</p>
+                </div>
+              </div>
+              <div class="price">150.00</div>
+              <div class="quantity">
+                <input type="number" value="1" min="1" class="quantity-field">
+              </div>
+              <div class="subtotal">150.00</div>
+              <div class="remove">
+                <button>Fjern</button>
+              </div>
+            </div>
+          </div>
+          <aside>
+            <div class="summary">
+              <div class="summary-total-items"><span class="total-items"></span> Din indkøbskurv</div>
+              <div class="summary-subtotal">
+                <div class="subtotal-title">Total</div>
+                <div class="subtotal-value final-value" id="basket-subtotal">1150.00</div>
+                <div class="summary-promo hide">
+                  <div class="promo-title">Promotion</div>
+                  <div class="promo-value final-value" id="basket-promo"></div>
+                </div>
+              </div>
+              <div class="summary-delivery">
+                <select name="delivery-collection" class="summary-delivery-selection">
+                    <option value="0" selected="selected">Vælg mellem print selv eller levering</option>
+                   <option value="collection">Print selv</option>
+                   <option value="first-class">Levering</option>
+                   <option value="second-class">Hurtig levering</option>
+
+                </select>
+              </div>
+              <div class="summary-total">
+                <div class="total-title">Total</div>
+                <div class="total-value final-value" id="basket-total">130.00</div>
+              </div>
+              <div class="summary-checkout">
+                <button class="checkout-cta">Gå videre til en sikker betaling.</button>
+              </div>
+            </div>
+          </aside>
+
+
+
+</main>
+</body>
+</html>
